@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 id="title">Clan Application</h1>
+    <p id="description">Application for Skelebros UK.</p>
+    <form id="survey-form">
+      <fieldset>
+      <label for="name" id="name-label">Enter your username: <input id="name" required type="text" placeholder="Golem08"></label>
+      <label for="email" id="email-label">Enter your email: <input id="email" required type="email" placeholder="royalepro@gmail.com"></label>
+      <label for="number" id="number-label">How old are you? <input id="number" type="number" min="13" max= "120" placeholder="15"></label>
+      </fieldset>
+       <fieldset>
+        <label for="yeschamps"><input id="yeschamps" type="radio" name="champs" class="inline" value="1" /> I have unlocked at least 1 champion</label>
+        <label for="nochamps"><input id="nochamps" type="radio" name="champs" class="inline" value="0"/> I have not yet unlocked a champion</label>
+        <select id="dropdown">
+            <option value="">Which deck do you main? (select one)</option>
+            <option value="1">logbait</option>
+            <option value="2">graveyard</option>
+            <option value="3">hog 2.6</option>
+            <option value="4">other</option>
+          </select>
+           <label for="oath">
+          <input id="oath" type="checkbox" class="inline" value="oath" /> I swear an oath of loyalty to the clan
+        </label>
+        <label for="warattacks"><input id="warattacks" type="checkbox" value="war" class="inline" />I promise to complete all war attacks</label>
+      </fieldset>
+      <fieldset>
+        <textarea id="comments" placeholder="Type any additional comments here..." cols="30" rows="6"></textarea>
+      </fieldset>
+    <input type="submit" id="submit" value="Submit" />
+    </form>
+  </body>
+</html>
